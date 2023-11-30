@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
 
   &__text-wrapper{
     display: flex;
@@ -20,6 +20,27 @@
       overflow: hidden;
       white-space: nowrap;
       animation: typingEffectAnimation 2.5s steps(30,end);
+    }
+  }
+
+  &__contact-me{
+
+    margin-top: 5rem;
+
+    button{
+      cursor: pointer;
+      padding: 10px 70px;
+      font-size: 2rem;
+      background: transparent;
+      color: var(--yellow-theme-main-color);
+      border: 1.5px solid var(--yellow-theme-main-color);
+      border-radius: 4px;
+      font-weight: 500;
+
+      &:hover{
+        background: var(--yellow-theme-main-color);
+        color: #000000;
+      }
     }
   }
 }
